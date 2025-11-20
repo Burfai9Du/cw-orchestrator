@@ -18,7 +18,7 @@ jobs:
           ]
       fail-fast: false # beta may fail we shouldn't care
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true
       - name: Install ${{ matrix.toolchain }}
@@ -41,7 +41,7 @@ jobs:
           ]
       fail-fast: false # beta may fail we shouldn't care
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true
       - name: Install ${{ matrix.toolchain }}
@@ -64,7 +64,7 @@ jobs:
       matrix:
         toolchain: [stable, beta]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true
       - name: Install stable
